@@ -1,0 +1,16 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+
+SET(CATCH_DIR /home/magodo/Catch/single_include)
+
+INCLUDE_DIRECTORIES(${CATCH_DIR})
+INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/)
+INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/..)
+INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/../stub/)
+
+ADD_EXECUTABLE(TestApp
+    ${PROJECT_SOURCE_DIR}/Test_LogAn.cpp
+    ${PROJECT_SOURCE_DIR}/../stub/FakeFileExtensionManager.cpp
+    ${PROJECT_SOURCE_DIR}/../LogAn.cpp
+    ${PROJECT_SOURCE_DIR}/../FileExtensionManager.cpp
+    ${PROJECT_SOURCE_DIR}/../ExtensionManagerFactory.cpp
+    )

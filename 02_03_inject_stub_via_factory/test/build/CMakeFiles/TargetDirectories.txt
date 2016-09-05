@@ -1,0 +1,1 @@
+/home/magodo/code/c/UT/ArtOfUt/02_03_inject_stub_via_factory/test/build/CMakeFiles/TestApp.dir
